@@ -1,0 +1,128 @@
+{
+  "carriers": [
+    {
+      "id": "carrier-1",
+      "name": "Polar Express Logistics",
+      "contactName": "Sarah Chen",
+      "contactEmail": "ops@polar-express.example"
+    },
+    {
+      "id": "carrier-2",
+      "name": "NorthStar Reefer",
+      "contactName": "David Lin",
+      "contactEmail": "dispatch@northstar.example"
+    }
+  ],
+  "shipments": [
+    {
+      "id": "shipment-1",
+      "shipmentCode": "CC-1001",
+      "carrierId": "carrier-1",
+      "productType": "Vaccines",
+      "origin": "Boston, MA",
+      "destination": "New York, NY",
+      "startTime": "2026-03-06T08:00:00.000Z",
+      "endTime": "2026-03-06T18:00:00.000Z",
+      "targetTempMin": 2,
+      "targetTempMax": 8,
+      "status": "completed"
+    },
+    {
+      "id": "shipment-2",
+      "shipmentCode": "CC-1002",
+      "carrierId": "carrier-2",
+      "productType": "Fresh Seafood",
+      "origin": "Portland, ME",
+      "destination": "Philadelphia, PA",
+      "startTime": "2026-03-07T05:00:00.000Z",
+      "endTime": "2026-03-07T21:00:00.000Z",
+      "targetTempMin": 0,
+      "targetTempMax": 4,
+      "status": "in_transit"
+    }
+  ],
+  "temperatureLogs": [
+    {
+      "id": "log-1",
+      "shipmentId": "shipment-1",
+      "recordedAt": "2026-03-06T08:00:00.000Z",
+      "temperature": 4.2,
+      "sensorId": "sensor-a1",
+      "locationText": "Boston departure"
+    },
+    {
+      "id": "log-2",
+      "shipmentId": "shipment-1",
+      "recordedAt": "2026-03-06T10:00:00.000Z",
+      "temperature": 5.1,
+      "sensorId": "sensor-a1",
+      "locationText": "Hartford checkpoint"
+    },
+    {
+      "id": "log-3",
+      "shipmentId": "shipment-1",
+      "recordedAt": "2026-03-06T12:00:00.000Z",
+      "temperature": 8.9,
+      "sensorId": "sensor-a1",
+      "locationText": "Traffic delay"
+    },
+    {
+      "id": "log-4",
+      "shipmentId": "shipment-1",
+      "recordedAt": "2026-03-06T14:00:00.000Z",
+      "temperature": 6.4,
+      "sensorId": "sensor-a1",
+      "locationText": "Recovered"
+    },
+    {
+      "id": "log-5",
+      "shipmentId": "shipment-1",
+      "recordedAt": "2026-03-06T18:00:00.000Z",
+      "temperature": 4.6,
+      "sensorId": "sensor-a1",
+      "locationText": "Delivered"
+    },
+    {
+      "id": "log-6",
+      "shipmentId": "shipment-2",
+      "recordedAt": "2026-03-07T05:00:00.000Z",
+      "temperature": 1.9,
+      "sensorId": "sensor-b2",
+      "locationText": "Portland departure"
+    },
+    {
+      "id": "log-7",
+      "shipmentId": "shipment-2",
+      "recordedAt": "2026-03-07T08:00:00.000Z",
+      "temperature": 2.3,
+      "sensorId": "sensor-b2",
+      "locationText": "New Hampshire"
+    },
+    {
+      "id": "log-8",
+      "shipmentId": "shipment-2",
+      "recordedAt": "2026-03-07T11:00:00.000Z",
+      "temperature": 4.8,
+      "sensorId": "sensor-b2",
+      "locationText": "Heavy loading"
+    },
+    {
+      "id": "log-9",
+      "shipmentId": "shipment-2",
+      "recordedAt": "2026-03-07T14:00:00.000Z",
+      "temperature": 5.6,
+      "sensorId": "sensor-b2",
+      "locationText": "Driver stop"
+    },
+    {
+      "id": "log-10",
+      "shipmentId": "shipment-2",
+      "recordedAt": "2026-03-07T17:00:00.000Z",
+      "temperature": 3.5,
+      "sensorId": "sensor-b2",
+      "locationText": "Back in range"
+    }
+  ],
+  "shipmentAnalyses": [],
+  "carrierScores": []
+}

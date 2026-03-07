@@ -1,0 +1,16 @@
+[
+  {
+    "shipmentCode": "CC-1002",
+    "recordedAt": "2026-03-07T19:00:00.000Z",
+    "temperature": 3.2,
+    "sensorId": "sensor-b2",
+    "locationText": "New Jersey"
+  },
+  {
+    "shipmentCode": "CC-1002",
+    "recordedAt": "2026-03-07T21:00:00.000Z",
+    "temperature": 2.8,
+    "sensorId": "sensor-b2",
+    "locationText": "Delivered"
+  }
+]
