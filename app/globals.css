@@ -58,3 +58,20 @@ input, select { width: 100%; border: 1px solid var(--border); border-radius: 10p
   .analysis-layout { grid-template-columns: 1fr; }
   .small-kv { grid-template-columns: 1fr; }
 }
+
+.analysis-link {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #ecfdf5;
+  color: #0f766e;
+  border: 1px solid #a7f3d0;
+  display: inline-block;
+  transition: all 0.15s ease;
+}
+
+.analysis-link:hover {
+  background: #d1fae5;
+  border-color: #6ee7b7;
+}
